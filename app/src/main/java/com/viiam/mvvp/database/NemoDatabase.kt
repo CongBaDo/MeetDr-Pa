@@ -6,7 +6,7 @@ import com.viiam.mvvp.model.Post
 import android.arch.persistence.room.Room
 import android.arch.persistence.room.RoomDatabase
 
-@Database(entities = arrayOf(Post::class), version = 1)
+@Database(entities = arrayOf(Post::class), version = 1,exportSchema = false)
 abstract class NemoDatabase : RoomDatabase(){
 
     abstract fun postDao(): PostDao

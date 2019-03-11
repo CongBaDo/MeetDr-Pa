@@ -7,47 +7,78 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+
+
+    <!--Define Text style including: Font,color, Size-->
+
+    <!--Text for heading in a Activity-->
+    <style name="textHeading">
+        <item name="android:textSize">18sp</item>
+        <item name="android:colorBackground">@color/colorWhite</item>
+    </style>
+
+
+    <!--Text style for Normal Text View for display content-->
     <style name="textNormal">
-        <item name="android:textSize">12pt</item>
-        <item name="android:textColor">#7F7F7F</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/colorGrey</item>
         <item name="android:textAllCaps">false</item>
     </style>
+
+    <style name="textSection">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <!--Text Bold-->
+    <style name="textBold">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!--Text Italic-->
+    <style name="textItalic">
+        <item name="android:textStyle">italic</item>
+    </style>
+    <!--Text bold and italic-->
+    <style name="textBoldItalic">
+        <item name="android:textStyle">italic|bold</item>
+    </style>
+    <!--Text for link-->
     <style name="textLink">
         <item name="android:textSize">12pt</item>
         <item name="android:textColor">#23D4D3</item>
         <item name="android:textAllCaps">false</item>
     </style>
+    <!--Align text for an TextView as center-->
     <style name="centerTextView">
         <item name="android:gravity">center_horizontal</item>
     </style>
+    <!--Align text for an TextView as left-->
     <style name="leftTextView">
         <item name="android:gravity">left</item>
     </style>
 
-    <style name="MyButton">
+    <!--Abstract style for all button in application-->
+    <style name="Button">
         <item name="android:textAllCaps">false</item>
         <item name="android:paddingLeft">5dp</item>
         <item name="android:paddingRight">5dp</item>
         <item name="android:layout_margin">5dp</item>
     </style>
-    <style name="buttonInactive" parent="@style/MyButton">
-        <item name="android:background">@color/colorInActiveBtn</item>
+    <!--Style color text and background for in active button-->
+    <style name="buttonInactive" parent="@style/Button">
+        <item name="android:background">@drawable/inactive_rounded_btn</item>
         <item name="android:textColor">@color/colorTextInActiveBtn</item>
-
     </style>
-
-    <style name="buttonActive" parent="@style/MyButton">
-        <item name="android:background">@drawable/rounded</item>
+    <!--Style color text and background for active button-->
+    <style name="buttonActive" parent="@style/Button">
+        <item name="android:background">@drawable/active_rounded_btn</item>
         <item name="android:textColor">@color/colorTextActiveBtn</item>
     </style>
-    <style name="transparentButton" parent="@style/MyButton">
+    <!--Style for transparent button-->
+    <style name="transparentButton" parent="@style/Button">
         <item name="android:background">@android:color/transparent</item>
         <item name="android:textColor">@android:color/holo_blue_dark</item>
-    </style>
-    <style name="heading">
-        <item name="android:textSize">16sp</item>
-    </style>
-    <style name="section">
-        <item name="android:textSize">12sp</item>
     </style>
 </resources>

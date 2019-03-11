@@ -11,59 +11,41 @@
 
     <!--Define Text style including: Font,color, Size-->
 
+
     <!--Text for heading in a Activity-->
-    <style name="textHeading">
-        <item name="android:textSize">18sp</item>
+    <style name="textHeading" parent="android:TextAppearance.Large">
         <item name="android:color">@color/colorWhite</item>
+        <item name="android:layout_width">wrap_content</item>
     </style>
 
 
     <!--Text style for Normal Text View for display content-->
-    <style name="textNormal">
-        <item name="android:textSize">14sp</item>
+    <style name="textNormal" parent="android:TextAppearance.Medium">
         <item name="android:textColor">@color/colorGrey</item>
         <item name="android:textAllCaps">false</item>
+        <item name="android:layout_width">wrap_content</item>
     </style>
 
-    <style name="textSection">
-        <item name="android:textSize">16sp</item>
+    <style name="textSection" parent="android:TextAppearance.Medium">
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/colorBlack</item>
         <item name="android:textAllCaps">false</item>
+        <item name="android:layout_width">wrap_content</item>
     </style>
 
     <!--Text small style-->
-    <style name="textSmall">
+    <style name="textSmall" parent="android:TextAppearance.Small">
         <item name="android:textColor">@color/colorGrey</item>
-        <item name="android:textSize">12sp</item>
         <item name="android:textAllCaps">false</item>
+        <item name="android:layout_width">wrap_content</item>
     </style>
-    <!--Text Bold-->
-    <style name="textBold">
-        <item name="android:textStyle">bold</item>
-    </style>
-    <!--Text Italic-->
-    <style name="textItalic">
-        <item name="android:textStyle">italic</item>
-    </style>
-    <!--Text bold and italic-->
-    <style name="textBoldItalic">
-        <item name="android:textStyle">italic|bold</item>
-    </style>
+
     <!--Text for link-->
-    <style name="textLink">
-        <item name="android:textSize">12sp</item>
+    <style name="textLink" parent="android:TextAppearance.Small">
         <item name="android:textColor">#23D4D3</item>
         <item name="android:textAllCaps">false</item>
     </style>
-    <!--Align text for an TextView as center-->
-    <style name="centerTextView">
-        <item name="android:gravity">center_horizontal</item>
-    </style>
-    <!--Align text for an TextView as left-->
-    <style name="leftTextView">
-        <item name="android:gravity">left</item>
-    </style>
+
 
     <!--Abstract style for all button in application-->
     <style name="Button" parent="Base.TextAppearance.AppCompat.Widget.Button">

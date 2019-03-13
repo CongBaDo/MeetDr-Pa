@@ -1,7 +1,7 @@
 package com.viiam.mvvp.viewmodel
 
 import android.app.Application
-import android.arch.lifecycle.LiveData
+import androidx.lifecycle.LiveData
 import android.os.AsyncTask
 import android.util.Log
 import com.viiam.mvvp.database.NemoDatabase

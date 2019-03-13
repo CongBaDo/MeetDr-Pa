@@ -64,6 +64,9 @@
         <item name="android:background">@drawable/active_rounded_btn</item>
         <item name="android:textColor">@color/colorTextActiveBtn</item>
     </style>
+    <style name="textBold">
+        <item name="android:textStyle">bold</item>
+    </style>
     <!--Style for transparent button-->
     <style name="transparentButton" parent="@style/Button">
         <item name="android:background">@android:color/transparent</item>

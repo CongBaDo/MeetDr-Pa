@@ -6,30 +6,33 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-
-        <ProgressBar
-            android:id="@+id/progressBar"
-            style="?android:attr/progressBarStyleLarge"
+        <TextView
+            android:id="@+id/txtText"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="match_parent" />
+        <!--<ProgressBar-->
+            <!--android:id="@+id/progressBar"-->
+            <!--style="?android:attr/progressBarStyleLarge"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
 
-        <Button
-            android:id="@+id/butRequest"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Request Data From Net" />
+        <!--<Button-->
+            <!--android:id="@+id/butRequest"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Request Data From Net" />-->
 
-        <Button
-            android:id="@+id/butFetch"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Request Data From Local" />
+        <!--<Button-->
+            <!--android:id="@+id/butFetch"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Request Data From Local" />-->
 
 
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/rcPost"
-            style="@style/textBold"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+        <!--<androidx.recyclerview.widget.RecyclerView-->
+            <!--android:id="@+id/rcPost"-->
+            <!--style="@style/textBold"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>-->
     </LinearLayout>
 </layout>

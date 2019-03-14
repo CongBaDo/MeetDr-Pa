@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColorPrimary"
+    tools:context=".activity.guideactivity.GuideActivity">
+
+    <Button
+        android:id="@+id/prevGuideBtn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/back_button_guide"
+        android:gravity="center_vertical"
+        app:layout_constraintBottom_toTopOf="@id/textViewSlideGuide"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/nextGuideBtn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/next_button_guide"
+        android:gravity="center_vertical"
+        app:layout_constraintBottom_toTopOf="@id/textViewSlideGuide"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPagerGuide"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toTopOf="@+id/textViewSlideGuide"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewSlideGuide"
+        style="@style/textSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/slide_guide_text"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@id/circleIndicatorGuide"
+        app:layout_constraintTop_toBottomOf="@id/viewPagerGuide" />
+
+    <me.relex.circleindicator.CircleIndicator
+        android:id="@+id/circleIndicatorGuide"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        app:layout_constraintBottom_toTopOf="@id/skipGuideButton"
+        app:layout_constraintTop_toBottomOf="@id/textViewSlideGuide" />
+
+    <Button
+        android:id="@+id/skipGuideButton"
+        style="@style/transparentButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/skip_guide_button_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/circleIndicatorGuide" />
+</android.support.constraint.ConstraintLayout>

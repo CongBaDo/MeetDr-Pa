@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#009999"
+        >
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+
+                >
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imgDaidien"
+                        android:layout_width="128dp"
+                        android:layout_height="128dp"
+                        android:gravity="center"
+                        android:src="@drawable/android6"
+                        android:layout_margin="5dp"
+                        />
+                    <ImageView
+                        android:id="@+id/imgEdit"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:background="@drawable/custom_user_account"
+                        android:scaleType="centerInside"
+                        android:layout_gravity="bottom|right"
+                        android:src="@drawable/photo"
+                        android:layout_marginRight="8dp"
+                        />
+            </FrameLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                >
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_FirstName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="32dp"
+                    >
+                    <EditText
+                        android:id="@+id/edtFirstName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Họ"
+                        android:layout_marginTop="12dp"
+                        android:textSize="15dp"
+                        />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_LastName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginRight="32dp"
+                    >
+                    <EditText
+                        android:id="@+id/edtLastName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Tên"
+                        android:layout_marginTop="12dp"
+                        android:textSize="15dp"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+            </LinearLayout>
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                >
+
+                <RadioButton
+                    android:id="@+id/rdbNam"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Nam"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:layout_marginRight="36dp"
+                    />
+                <RadioButton
+                    android:id="@+id/rdbNu"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nữ"
+                    android:padding="8dp"
+                    android:layout_marginLeft="48dp"
+                    />
+            </RadioGroup>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_NamSinh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                >
+                <EditText
+                    android:id="@+id/edtNamSinh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Năm sinh"
+                    android:padding="16dp"
+                    android:layout_margin="12dp"
+                    android:drawableLeft="@drawable/calendar"
+                    android:gravity="center"
+                    android:textSize="15dp"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_DiaChi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                >
+                <EditText
+                    android:id="@+id/edtDiaChi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Địa chỉ (Không bắt buộc)"
+                    android:padding="16dp"
+                    android:layout_margin="12dp"
+                    android:gravity="center"
+                    android:drawableLeft="@drawable/address"
+                    android:textSize="15dp"
+                    android:singleLine="true"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_Email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                >
+
+                <EditText
+                    android:id="@+id/edtEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    android:padding="16dp"
+                    android:layout_margin="12dp"
+                    android:gravity="center"
+                    android:drawableLeft="@drawable/email"
+                    android:textSize="15dp"
+
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="TIẾP TỤC"
+                android:id="@+id/btnTiepTuc"
+                android:background="@drawable/custom_button"
+                android:textColor="@color/colorWhite"
+                />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

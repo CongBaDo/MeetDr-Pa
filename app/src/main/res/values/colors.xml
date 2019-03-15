@@ -18,4 +18,6 @@
     <color name="colorTextInActiveBtn">#ffffff</color>
     <color name="bgColorActiveButton">#00DECE</color>
     <color name="bgColorInActiveBtn">#9F9E9F</color>
+
+    <color name="colorButton">#00CCCC</color>
 </resources>

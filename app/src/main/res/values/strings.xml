@@ -1,4 +1,13 @@
 <resources>
     <string name="app_name">Dagger Retrofit Rx</string>
     <string name="unknown_error">Error Nemo </string>
+
+    <string name="FACEBOOK_APP_ID">2321743671392844</string>
+    <string name="ACCOUNT_KIT_CLIENT_TOKEN">f6064e419a0cd641d3a8d8236cf275f1</string>
+    <string name="AK_ACCOUNT_KIT_CLIENT_TOKEN">akf6064e419a0cd641d3a8d8236cf275f1</string>
+
+
+    <string name="anhdaidien">Ảnh đại diện</string>
+    <string name="banchuanhapmucnay">Bạn chưa nhập mục này</string>
+    <string name="bankhongduocdetrong">Bạn không được để trống</string>
 </resources>

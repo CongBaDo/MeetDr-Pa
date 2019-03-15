@@ -1,13 +1,12 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
-
 
     <!--Define Text style including: Font,color, Size-->
 
@@ -71,5 +70,8 @@
     <style name="transparentButton" parent="@style/Button">
         <item name="android:background">@android:color/transparent</item>
         <item name="android:textColor">@android:color/holo_blue_dark</item>
+    </style>
+    <style name="PopUpActivity" parent="Theme.AppCompat.Light.Dialog.Alert">
+            <item name="android:windowNoTitle">true</item>
     </style>
 </resources>

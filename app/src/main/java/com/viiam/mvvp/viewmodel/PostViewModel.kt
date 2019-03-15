@@ -1,8 +1,8 @@
 package com.viiam.mvvp.viewmodel
 
 import android.app.Application
-import android.arch.lifecycle.AndroidViewModel
-import android.arch.lifecycle.LiveData
+import androidx.lifecycle.AndroidViewModel
+import androidx.lifecycle.LiveData
 import com.viiam.mvvp.database.PostDao
 import com.viiam.mvvp.model.Post
 

@@ -20,9 +20,6 @@ class SplashActivity : AppCompatActivity()  {
         finish()
 
         var metaDataModel = ViewModelProviders.of(this).get(MetaDataViewModel::class.java)
-//        metaDataModel.getMetaData().observe(this, Observer {
-//            adapter.updatePost(it!!)
-//        })
         metaDataModel.getMetaDataRequest()
     }
 }

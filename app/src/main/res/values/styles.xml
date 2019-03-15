@@ -8,9 +8,13 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+
+    <!-- Splash Screen theme. -->
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_background</item>
+    </style>
+
     <!--Define Text style including: Font,color, Size-->
-
-
     <!--Text for heading in a Activity-->
     <style name="textHeading" parent="android:TextAppearance.Large">
         <item name="android:color">@color/colorWhite</item>
@@ -32,6 +36,12 @@
         <item name="android:layout_width">wrap_content</item>
     </style>
 
+    <style name="textSectionSmall" parent="android:TextAppearance.Small">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
     <!--Text small style-->
     <style name="textSmall" parent="android:TextAppearance.Small">
         <item name="android:textColor">@color/colorGrey</item>
@@ -63,6 +73,7 @@
         <item name="android:background">@drawable/active_rounded_btn</item>
         <item name="android:textColor">@color/colorTextActiveBtn</item>
     </style>
+
     <style name="textBold">
         <item name="android:textStyle">bold</item>
     </style>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.guideactivity.GuideActivity">
+    <ImageView
+        android:id="@+id/fourthGuideImg"
+        android:background="@drawable/fourth_guide_img"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        app:layout_constraintBottom_toTopOf="@id/linearLayFourthGuide"
+        android:layout_height="0dp" />
+    <LinearLayout
+        android:gravity="center"
+        android:id="@+id/linearLayFourthGuide"
+        app:layout_constraintTop_toBottomOf="@id/fourthGuideImg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:textAlignment="center"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/textViewFourthGuide"
+            style="@style/textSection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fourth_guide_content" />
+
+        <Button
+            android:id="@+id/startButtonGuide"
+            style="@style/buttonActive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/start_guide_button_text" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

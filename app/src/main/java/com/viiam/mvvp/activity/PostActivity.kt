@@ -11,7 +11,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.viiam.mvvp.BASE_URL
 import com.viiam.mvvp.R
 import com.viiam.mvvp.adapter.NemoAdapter
-import com.viiam.mvvp.network.GetMetadata
 import com.viiam.mvvp.splashScreen.SplashActivity
 import com.viiam.mvvp.viewmodel.PostViewModel
 import io.reactivex.android.schedulers.AndroidSchedulers

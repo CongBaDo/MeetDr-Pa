@@ -19,6 +19,7 @@ class PostReposity(application: Application) : BaseReposity(application) {
     private var posts: LiveData<List<Post>>
     private var subscription: Disposable? = null
 
+
     init {
         postDao = NemoDatabase.getInstance(application)!!.postDao()
         posts = postDao.getAllPost()

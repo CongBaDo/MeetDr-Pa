@@ -4,6 +4,7 @@ import com.viiam.mvvp.database.PostDao
 import com.viiam.mvvp.module.ContextModule
 import com.viiam.mvvp.module.NetworkModule
 import com.viiam.mvvp.viewmodel.PostReposity
+import com.viiam.mvvp.viewmodel.SplashReposity
 import dagger.Component
 import javax.inject.Singleton
 
@@ -18,6 +19,8 @@ interface NemoInjector {
      * @param postPresenter PostPresenter in which to inject the dependencies
      */
     fun inject(postReposity: PostReposity)
+
+    fun inject(splashReposity: SplashReposity)
 
     @Component.Builder
     interface Builder {

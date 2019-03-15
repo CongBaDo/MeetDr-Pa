@@ -9,6 +9,8 @@ import com.viiam.mvvp.network.PostApi
 import javax.inject.Inject
 
 abstract class BaseReposity(application: Application) {
+
+    var application: Application = application;
     @Inject
     lateinit var postApi: PostApi
 
@@ -27,6 +29,7 @@ abstract class BaseReposity(application: Application) {
     fun inject(){
         when(this){
             is PostReposity -> injector.inject(this)
+            is SplashReposity -> injector.inject(this);
         }
     }
 }

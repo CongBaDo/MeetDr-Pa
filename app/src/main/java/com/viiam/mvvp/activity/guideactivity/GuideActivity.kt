@@ -12,8 +12,8 @@ import kotlinx.android.synthetic.main.activity_guide.*
 class GuideActivity : AppCompatActivity(), View.OnClickListener{
     override fun onClick(v: View?) {
         when(v){
-            prevGuideBtn -> viewPagerGuide.currentItem -= if (viewPagerGuide.currentItem > 0) 1 else 0
-            nextGuideBtn -> viewPagerGuide.currentItem += if (viewPagerGuide.currentItem < viewPagerGuide.adapter?.count!!-1) 1 else 0
+            continueGuideButton -> (viewPagerGuide.adapter as GuidePagerAdapter).increaseCurrentItemPosition()
+//            skipGuideButton -> viewPagerGuide.currentItem += if (viewPagerGuide.currentItem < viewPagerGuide.adapter?.count!!-1) 1 else 0
         }
     }
 
@@ -22,11 +22,8 @@ class GuideActivity : AppCompatActivity(), View.OnClickListener{
         window.requestFeature(Window.FEATURE_ACTION_BAR)
         supportActionBar?.hide()
         setContentView(R.layout.activity_guide)
-        prevGuideBtn.bringToFront()
-        nextGuideBtn.bringToFront()
 
-        prevGuideBtn.setOnClickListener(this)
-        nextGuideBtn.setOnClickListener(this)
+        continueGuideButton.setOnClickListener(this)
 
         addControl()
     }
@@ -39,5 +36,13 @@ class GuideActivity : AppCompatActivity(), View.OnClickListener{
         viewPagerGuide.addOnPageChangeListener(viewPagerGuide.adapter as ViewPager.OnPageChangeListener)
 
         circleIndicatorGuide.setViewPager(viewPagerGuide)
+    }
+
+    fun setContinueButtonVisible(){
+        continueGuideButton.visibility = View.VISIBLE
+    }
+
+    fun setContinueButtonInvisible(){
+        continueGuideButton.visibility = View.INVISIBLE
     }
 }

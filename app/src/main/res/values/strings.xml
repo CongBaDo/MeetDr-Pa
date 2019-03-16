@@ -3,12 +3,20 @@
     <string name="unknown_error">Error Nemo </string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="first_guide_content">Bạn thường hay khám bệnh ở các phòng khám tư nhân ?\n\nKhi ở các phòng khám bạn cảm thấy quá mệt mỏi vì phải chờ đợi đến lượt khám của mình ?</string>
-    <string name="skip_guide_button_text">BỎ QUA</string>
-    <string name="continue_guide_button_text">TIẾP TỤC</string>
-    <string name="second_guide_content">Hay bạn đang phân vân không biết nên đặt hẹn ở phòng khám nào là tốt nhất ?</string>
-    <string name="slide_guide_text">Vuốt sang trái hoặc phải để tiếp tục</string>
-    <string name="third_guide_content">MeetDr chính là ứng dụng hoàn hảo dành cho bạn. Với các tính năng như đặt hẹn bác sĩ trực tuyến, tìm kiếm bác sĩ theo bệnh, địa điểm, giá cả, ..., những vấn đề của bạn sẽ hoàn toàn được giải quyết</string>
-    <string name="start_guide_button_text">BẮT ĐẦU NGAY</string>
-    <string name="fourth_guide_content">Còn chần chờ gì nữa?\nHãy bắt đầu ngay thôi nào !</string>
+    <string name="guide_first_fragment_text_view">Bạn thường hay khám bệnh ở các phòng khám tư nhân ?\n\nKhi ở các phòng khám bạn cảm thấy quá mệt mỏi vì phải chờ đợi đến lượt khám của mình ?</string>
+    <string name="guide_button_skip">BỎ QUA</string>
+    <string name="guide_button_continue">TIẾP TỤC</string>
+    <string name="guide_second_fragment_text_view">Hay bạn đang phân vân không biết nên đặt hẹn ở phòng khám nào là tốt nhất ?</string>
+    <string name="guide_third_fragment_text_view">MeetDr chính là ứng dụng hoàn hảo dành cho bạn. Với các tính năng như đặt hẹn bác sĩ trực tuyến, tìm kiếm bác sĩ theo bệnh, địa điểm, giá cả, ..., những vấn đề của bạn sẽ hoàn toàn được giải quyết</string>
+    <string name="guide_button_start">BẮT ĐẦU NGAY</string>
+    <string name="guide_fourth_fragment_text_view">Còn chần chờ gì nữa?\nHãy bắt đầu ngay thôi nào !</string>
+    <string name="login_text_view_top">Vui lòng nhập số điện thoại và mật khẩu để đăng nhập</string>
+    <string name="login_button_login">ĐĂNG NHẬP</string>
+    <string name="login_text_view_no_account">Chưa có tài khoản ?</string>
+    <string name="login_text_view_forgot_pass">Quên mật khẩu ?</string>
+    <string name="login_text_view_sign_up">Đăng kí ngay</string>
+    <string name="login_text_view_get_pass_back">Lấy lại mật khẩu</string>
+    <string name="login_text_view_policy"><u>Điều khoản dịch vụ</u></string>
+    <string name="login_text_view_hint_phone_number">Số điện thoại</string>
+    <string name="login_text_view_hint_password">Mật khẩu</string>
 </resources>

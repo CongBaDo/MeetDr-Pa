@@ -8,21 +8,21 @@
 
     <ImageView
         android:background="@drawable/second_guide_img"
-        android:id="@+id/secondGuideImg"
+        android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/textViewSecondGuide"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
         android:paddingTop="20dp"
-        android:id="@+id/textViewSecondGuide"
+        android:id="@+id/textView"
         style="@style/textSectionSmall"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:text="@string/second_guide_content"
+        android:text="@string/guide_second_fragment_text_view"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/secondGuideImg" />
+        app:layout_constraintTop_toBottomOf="@id/imageView" />
 </android.support.constraint.ConstraintLayout>

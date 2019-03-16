@@ -6,16 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".activity.guideactivity.GuideActivity">
     <ImageView
-        android:id="@+id/fourthGuideImg"
+        android:id="@+id/imageView"
         android:background="@drawable/fourth_guide_img"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_width="match_parent"
-        app:layout_constraintBottom_toTopOf="@id/linearLayFourthGuide"
+        app:layout_constraintBottom_toTopOf="@id/linearLayout"
         android:layout_height="0dp" />
     <LinearLayout
         android:gravity="center"
-        android:id="@+id/linearLayFourthGuide"
-        app:layout_constraintTop_toBottomOf="@id/fourthGuideImg"
+        android:id="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@id/imageView"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -25,18 +25,17 @@
         <TextView
             android:textAlignment="center"
             android:layout_marginBottom="20dp"
-            android:id="@+id/textViewFourthGuide"
+            android:id="@+id/textView"
             style="@style/textSection"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/fourth_guide_content" />
+            android:text="@string/guide_fourth_fragment_text_view" />
 
         <Button
-            android:id="@+id/startButtonGuide"
+            android:id="@+id/buttonStart"
             style="@style/buttonActive"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="@string/start_guide_button_text" />
+            android:text="@string/guide_button_start" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

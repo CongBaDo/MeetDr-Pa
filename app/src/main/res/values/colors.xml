@@ -16,6 +16,6 @@
     <color name="colorLink">#34E1EC</color>
     <color name="colorTextActiveBtn">#ffffff</color>
     <color name="colorTextInActiveBtn">#ffffff</color>
-    <color name="bgColorActiveButton">#00DECE</color>
+    <color name="bgColorActiveButton">#00CAC8</color>
     <color name="bgColorInActiveBtn">#9F9E9F</color>
 </resources>

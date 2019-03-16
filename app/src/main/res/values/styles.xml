@@ -36,7 +36,6 @@
     </style>
 
     <style name="textSectionSmall" parent="android:TextAppearance.Small">
-        <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/colorBlack</item>
         <item name="android:textAllCaps">false</item>
         <item name="android:layout_width">wrap_content</item>
@@ -49,6 +48,12 @@
         <item name="android:layout_width">wrap_content</item>
     </style>
 
+    <!--<style name="textSmallGray" parent="android:TextAppearance.Small">-->
+        <!--<item name="android:textColor">@color/colorGrey</item>-->
+        <!--<item name="android:textAllCaps">false</item>-->
+        <!--<item name="android:layout_width">wrap_content</item>-->
+    <!--</style>-->
+
     <!--Text for link-->
     <style name="textLink" parent="android:TextAppearance.Small">
         <item name="android:textColor">#23D4D3</item>
@@ -59,9 +64,9 @@
     <!--Abstract style for all button in application-->
     <style name="Button" parent="Base.TextAppearance.AppCompat.Widget.Button">
         <item name="android:textAllCaps">false</item>
-        <item name="android:paddingLeft">5dp</item>
-        <item name="android:paddingRight">5dp</item>
-        <item name="android:layout_margin">5dp</item>
+        <item name="android:paddingLeft">30dp</item>
+        <item name="android:paddingRight">30dp</item>
+        <item name="android:layout_height">35dp</item>
     </style>
     <!--Style color text and background for in active button-->
     <style name="buttonInactive" parent="@style/Button">

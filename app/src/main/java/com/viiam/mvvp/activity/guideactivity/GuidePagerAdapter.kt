@@ -4,6 +4,7 @@ import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentStatePagerAdapter
 import android.support.v4.view.ViewPager
+import android.view.View
 import com.viiam.mvvp.R
 import com.viiam.mvvp.activity.guideactivity.guidefragments.*
 import com.xgc1986.parallaxPagerTransformer.ParallaxPagerTransformer
@@ -37,18 +38,18 @@ class GuidePagerAdapter(fragmentManager: FragmentManager, private val guideActiv
 
     override fun onPageScrolled(position: Int, positionOffset: Float, positionOffsetPixels: Int) {
         when (position) {
-            count-1 -> guideActivity.setContinueButtonInvisible()
-            else -> guideActivity.setContinueButtonVisible()
+            count-1 -> guideActivity.setContinueButtonVisibility(View.INVISIBLE)
+            else -> guideActivity.setContinueButtonVisibility(View.VISIBLE)
         }
     }
 
     override fun onPageSelected(position: Int) {
         mCurrentPosition = position
         when(position){
-            0 -> guideActivity.viewPagerGuide.setPageTransformer(false, ParallaxPagerTransformer(R.id.firstGuideImg))
-            1 -> guideActivity.viewPagerGuide.setPageTransformer(false, ParallaxPagerTransformer(R.id.secondGuideImg))
-            2 -> guideActivity.viewPagerGuide.setPageTransformer(false, ParallaxPagerTransformer(R.id.thirdGuideImg))
-            3 -> guideActivity.viewPagerGuide.setPageTransformer(false, ParallaxPagerTransformer(R.id.fourthGuideImg))
+            0 -> guideActivity.viewPager.setPageTransformer(false, ParallaxPagerTransformer(R.id.imageView))
+            1 -> guideActivity.viewPager.setPageTransformer(false, ParallaxPagerTransformer(R.id.imageView))
+            2 -> guideActivity.viewPager.setPageTransformer(false, ParallaxPagerTransformer(R.id.imageView))
+            3 -> guideActivity.viewPager.setPageTransformer(false, ParallaxPagerTransformer(R.id.imageView))
         }
     }
 
@@ -69,15 +70,16 @@ class GuidePagerAdapter(fragmentManager: FragmentManager, private val guideActiv
     }
 
     private fun handleSetNextItem() {
-        val lastPosition = guideActivity.viewPagerGuide.adapter?.count!! - 1
+        val lastPosition = guideActivity.viewPager.adapter?.count!! - 1
         if (mCurrentPosition == 0) {
-            guideActivity.viewPagerGuide.setCurrentItem(lastPosition, true)
+            guideActivity.viewPager.setCurrentItem(lastPosition, true)
         } else if (mCurrentPosition == lastPosition) {
-            guideActivity.viewPagerGuide.setCurrentItem(0, true)
+            guideActivity.viewPager.setCurrentItem(0, true)
         }
     }
 
     fun increaseCurrentItemPosition(){
-        guideActivity.viewPagerGuide.setCurrentItem(++mCurrentPosition, true)
+        if(mCurrentPosition < count-1)
+            guideActivity.viewPager.setCurrentItem(++mCurrentPosition, true)
     }
 }

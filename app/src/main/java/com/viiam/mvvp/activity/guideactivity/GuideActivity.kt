@@ -1,19 +1,21 @@
 package com.viiam.mvvp.activity.guideactivity
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v4.view.ViewPager
 import android.view.View
 import android.view.Window
 import com.viiam.mvvp.R
+import com.viiam.mvvp.activity.LoginActivity
 import com.xgc1986.parallaxPagerTransformer.ParallaxPagerTransformer
 import kotlinx.android.synthetic.main.activity_guide.*
 
 class GuideActivity : AppCompatActivity(), View.OnClickListener{
     override fun onClick(v: View?) {
-        when(v){
-            continueGuideButton -> (viewPagerGuide.adapter as GuidePagerAdapter).increaseCurrentItemPosition()
-//            skipGuideButton -> viewPagerGuide.currentItem += if (viewPagerGuide.currentItem < viewPagerGuide.adapter?.count!!-1) 1 else 0
+        when (v) {
+            buttonContinue -> (viewPager.adapter as GuidePagerAdapter).increaseCurrentItemPosition()
+            buttonSkip -> startLogInActivity()
         }
     }
 
@@ -23,26 +25,32 @@ class GuideActivity : AppCompatActivity(), View.OnClickListener{
         supportActionBar?.hide()
         setContentView(R.layout.activity_guide)
 
-        continueGuideButton.setOnClickListener(this)
+        buttonContinue.setOnClickListener(this)
+        buttonSkip.setOnClickListener(this)
 
         addControl()
     }
 
     private fun addControl() {
-        viewPagerGuide.setPageTransformer(false, ParallaxPagerTransformer(R.id.firstGuideImg))
-        viewPagerGuide.adapter = GuidePagerAdapter(supportFragmentManager, this).apply {
-            registerDataSetObserver(circleIndicatorGuide.dataSetObserver)
+        viewPager.setPageTransformer(false, ParallaxPagerTransformer(R.id.imageView))
+        viewPager.adapter = GuidePagerAdapter(supportFragmentManager, this).apply {
+            registerDataSetObserver(circleIndicator.dataSetObserver)
         }
-        viewPagerGuide.addOnPageChangeListener(viewPagerGuide.adapter as ViewPager.OnPageChangeListener)
+        viewPager.addOnPageChangeListener(viewPager.adapter as ViewPager.OnPageChangeListener)
 
-        circleIndicatorGuide.setViewPager(viewPagerGuide)
+        circleIndicator.setViewPager(viewPager)
     }
 
-    fun setContinueButtonVisible(){
-        continueGuideButton.visibility = View.VISIBLE
+    fun setContinueButtonVisibility(visibility:Int){
+        buttonContinue.visibility = visibility
     }
 
-    fun setContinueButtonInvisible(){
-        continueGuideButton.visibility = View.INVISIBLE
+    fun startLogInActivity(){
+        startActivity(Intent(this,LoginActivity::class.java))
+        finish()
+    }
+
+    companion object {
+        const val SKIP_GUIDE = "SKIP_GUIDE"
     }
 }
